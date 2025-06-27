@@ -1,0 +1,4 @@
+SELECT Customer_id, SUM(Amount) AS total_spent
+FROM ProductDetails
+GROUP BY Customer_id
+HAVING SUM(Amount)>300;
